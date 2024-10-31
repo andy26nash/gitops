@@ -1,4 +1,7 @@
-# This file is used at https://learn.microsoft.com/en-us/azure/aks/app-routing
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app-store
 ---
 apiVersion: apps/v1
 kind: Deployment
