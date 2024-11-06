@@ -4,3 +4,4 @@ namespace: app-store
 resources:
   - app-store.yaml
   - ingress.yaml
+  - dns.yaml

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cms-dns
+  annotations:
+    service.beta.kubernetes.io/azure-dns-label-name: cms-dev
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: cms-dns
