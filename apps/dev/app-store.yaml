@@ -231,6 +231,8 @@ kind: Service
 metadata:
   name: store-front
   namespace: app-store
+  annotations:
+    service.beta.kubernetes.io/azure-dns-label-name: app-store
 spec:
   ports:
   - port: 80
